@@ -51,7 +51,7 @@ INSERT INTO `posts` (`post_id`, `user_id`, `title`, `content`) VALUES
 CREATE TABLE `users` (
   `user_id` int(11) NOT NULL,
   `username` varchar(50) DEFAULT NULL,
-  `email` varchar(50) DEFAULT NULL,
+  `email` varchar(100) DEFAULT NULL,
   `is_active` tinyint(1) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
@@ -79,6 +79,9 @@ ALTER TABLE `posts`
 --
 ALTER TABLE `users`
   ADD PRIMARY KEY (`user_id`);
+
+ALTER TABLE `users`
+  MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for dumped tables
