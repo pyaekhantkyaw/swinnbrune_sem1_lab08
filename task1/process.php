@@ -5,7 +5,7 @@ session_start();
 $username = $_POST['username'];
 $password = $_POST['password'];
 
-if ($username == 'PyaekhantKyaw' && $password == '106628822')
+if ($username == 'PyaeKhantKyaw' && $password == '106628822')
 {
     $_SESSION['user'] = $username;
 
