@@ -14,7 +14,7 @@
         <input type="password" id="password" name="password" required>
     </p>
 
-    <input type="hidden" name="token" value="P1066228822">
+    <input type="hidden" name="token" value="P106628822">
 
     <p>
         <input type="submit" value="Login">
